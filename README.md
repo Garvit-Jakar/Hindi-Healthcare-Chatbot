@@ -6,4 +6,7 @@ The success of this bot could serve as a model for using AI and NLP to reduce he
 
 
 Architecture:-
+
+
+
 ![image](https://github.com/user-attachments/assets/295084e6-21c6-493a-8c40-4e7ce732baba)
