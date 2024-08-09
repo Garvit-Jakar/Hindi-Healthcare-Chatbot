@@ -1,0 +1,527 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+  - about_asthma
+  - asthma_symptoms
+  - asthma_causes
+  - asthma_treatment
+  - about_diabetes
+  - diabetes_symptoms
+  - diabetes_treatment
+  - about_viral_fever
+  - viral_fever_symptoms
+  - viral_fever_treatment
+  - about_measles
+  - measles_symptoms
+  - measles_treatment
+  - about_indigestion
+  - indigestion_symptoms
+  - indigestion_treatment
+  - about_arthritis
+  - arthritis_symptoms
+  - arthritis_causes
+  - arthritis_treatment
+  - about_yellow_fever
+  - yellow_fever_symptoms
+  - yellow_fever_treatment
+  - about_filariasis
+  - filariasis_symptoms
+  - filariasis_treatment
+  - about_knee_pain
+  - knee_pain_symptoms
+  - knee_pain_treatment
+  - about_leprosy
+  - leprosy_symptoms
+  - leprosy_treatment
+  - about_pancreatitis
+  - pancreatitis_symptoms
+  - pancreatitis_treatment
+  - about_migraine
+  - migraine_symptoms
+  - migraine_treatment
+  - about_pneumonia
+  - pneumonia_symptoms
+  - pneumonia_treatment
+  - about_anorexia
+  - anorexia_symptoms
+  - anorexia_treatment
+  - about_pain
+  - pain_causes
+  - pain_treatment
+  - about_insomnia
+  - insomnia_causes
+  - insomnia_treatment
+  - about_hernia
+  - hernia_symptoms
+  - hernia_causes
+  - hernia_treatment
+  - about_spondylosis
+  - spondylosis_symptoms
+  - spondylosis_causes
+  - spondylosis_treatment
+  - about_liver_cancer
+  - liver_cancer_symptoms
+  - liver_cancer_causes
+  - liver_cancer_treatment
+  - about_back_pain
+  - back_pain_symptoms
+  - back_pain_causes
+  - back_pain_treatment
+  - about_chest_pain
+  - chest_pain_symptoms
+  - chest_pain_causes
+  - chest_pain_treatment
+  - about_lung_cancer
+  - lung_cancer_symptoms
+  - lung_cancer_causes
+  - lung_cancer_treatment
+  - about_fatigue
+  - fatigue_symptoms
+  - fatigue_causes
+  - fatigue_treatment
+  - about_blood_clot
+  - blood_clot_symptoms
+  - blood_clot_causes
+  - about_muscle_pain
+  - muscle_pain_symptoms
+  - muscle_pain_causes
+  - muscle_pain_treatment
+  - inquire_prostate_cancer
+  - inquire_prostate_cancer_symptoms
+  - inquire_prostate_cancer_causes
+  - inquire_prostate_cancer_treatment
+  - inquire_hepatitis
+  - inquire_hepatitis_symptoms
+  - inquire_hepatitis_causes
+  - inquire_hepatitis_treatment
+  - inquire_symptoms_yellow_teeth
+  - inquire_causes_yellow_teeth
+  - inquire_treatments_yellow_teeth
+  - inquire_home_remedies_yellow_teeth
+  - inquire_symptoms_tb
+  - inquire_causes_tb
+  - inquire_treatments_tb
+
+
+responses:
+  utter_hello:
+  - text: "नमस्कार, हमारे मेडिकल चैटबॉट में आपका स्वागत है।"
+
+  utter_about_asthma:
+  - text: "दमा या अस्थमा एक ऐसी स्थिति है जहाँ श्वास नलिकाओं में सूजन के कारण सांस लेने में कठिनाई होती है।"
+
+  utter_asthma_symptoms:
+  - text: "दमा के लक्षणों में शामिल हैं सूखी खांसी, सांस लेने में दिक्कत, रात में बढ़ने वाली खांसी, और सीटी बजने जैसी आवाज।"
+
+  utter_asthma_causes:
+  - text: "दमा खान-पान की गलतियों, आनुवांशिकी, पर्यावरणीय एलर्जी, और धूल के कणों से हो सकता है।"
+
+  utter_asthma_treatment:
+  - text: "दमा का इलाज में धूम्रपान से परहेज, नमी और धूल से बचाव, और डॉक्टर की सलाह से इनहेलर्स का इस्तेमाल शामिल है। घरेलू उपचार में अजवाइन की भाप, लहसुन और अदरक का सेवन प्रभावी हो स"
+
+  utter_about_diabetes:
+  - text: "मधुमेह या डायबिटीज एक जीवनशैली रोग है जो शरीर में इंसुलिन की कमी या इंसुलिन के प्रभावी उपयोग में कमी के कारण होता है।"
+
+  utter_diabetes_symptoms:
+  - text: "मधुमेह के लक्षणों में अत्यधिक प्यास, बार-बार पेशाब आना, जख्मों का धीरे भरना, और थकान महसूस होना शामिल हैं।"
+
+  utter_diabetes_treatment:
+  - text: "मधुमेह के उपचार में नियमित व्यायाम, रक्त शुगर की निगरानी, स्वस्थ आहार, और आवश्यकता पड़ने पर इंसुलिन और अन्य दवाएँ शामिल हैं।"
+
+  utter_about_viral_fever:
+  - text: "वायरल बुखार वायरस के संक्रमण से होने वाला एक बुखार है, जो अक्सर ठंडे वातावरण के संपर्क में आने से सक्रिय होता है।"
+
+  utter_viral_fever_symptoms:
+  - text: "वायरल बुखार के लक्षणों में आँखें लाल होना, तापमान में वृद्धि, खांसी, जुकाम, गले में दर्द, नाक बहना, बदन दर्द, और सिरदर्द शामिल हैं।"
+
+  utter_viral_fever_treatment:
+  - text: "वायरल बुखार के उपचार में आराम करना, पैरासिटामॉल का सेवन, और शरीर को ठंडा रखने के उपाय शामिल हैं। साथ ही, साफ-सफाई और उचित देखभाल महत्वपूर्ण है।"
+
+  utter_about_measles:
+  - text: "खसरा एक अत्यंत संक्रामक वायरल बीमारी है जो मुख्य रूप से वायु संचारित ड्रॉप्लेट्स के द्वारा फैलती है।"
+
+  utter_measles_symptoms:
+  - text: "खसरा के लक्षणों में आंखों में लाली और सूजन, खांसी, जुकाम, गले में दर्द, उच्च बुखार, और शरीर में लाल चकत्ते शामिल हैं।"
+
+  utter_measles_treatment:
+  - text: "खसरे का इलाज मुख्य रूप से सहायक देखभाल पर केंद्रित होता है। आराम, ढेर सारे तरल पदार्थ, और बुखार कम करने के लिए दवाओं का उपयोग किया जाता है। टीकाकरण सबसे प्रभावी रोकथाम है।"
+
+  utter_about_indigestion:
+  - text: "बदहजमी एक पाचन समस्या है जिसमें पेट में गैस बनने के साथ खट्टी डकारें और पेट में असुविधा महसूस होती है।"
+
+  utter_indigestion_symptoms:
+  - text: "बदहजमी के लक्षणों में खट्टी डकारें, खाने का मुँह में वापस आ जाना, गले में खरखराहट, छाती में दर्द, और चिड़चिड़ापन शामिल हैं।"
+
+  utter_indigestion_treatment:
+  - text: "बदहजमी के इलाज में तैलीय और मसालेदार खाने से परहेज, तनाव से बचना, नियमित व्यायाम, और गरम पानी पीने की सलाह दी जाती है। गैस्ट्रिक के लिए छोटे आहार और खाने के बाद टहलना भी लाभदायक होता है।"
+
+  utter_about_arthritis:
+  - text: "गठिया या वातरक्त जोड़ों में सूजन, दर्द और अकड़न का कारण बनता है, जिससे जोड़ों में गांठें बन जाती हैं।"
+
+  utter_arthritis_symptoms:
+  - text: "गठिया के लक्षणों में जोड़ों में दर्द, सूजन, बुखार, अंगों का शून्य हो जाना, और खाया हुआ भोजन न पचना शामिल हैं।"
+
+  utter_arthritis_causes:
+  - text: "गठिया के प्रमुख कारणों में जीवनशैली, उच्च यूरिक एसिड स्तर, खराब चयापचय, मोटापा, और गुर्दे की समस्याएं शामिल हैं।"
+
+  utter_arthritis_treatment:
+  - text: "गठिया का इलाज में यूरिक एसिड कम करने वाली दवाइयां, एंटीइन्फ्लेमेट्री दवाइयां, और सही आहार"
+
+  utter_about_yellow_fever:
+  - text: "पीला बुखार एक संक्रामक बीमारी है जिसे एडीस ईजिप्टिआई मच्छर के काटने से फैलने वाले विषाणु से होता है।"
+
+  utter_yellow_fever_symptoms:
+  - text: "पीला बुखार के लक्षणों में अचानक तेज बुखार, पीलिया, रक्तचाप की कमी, अनिद्रा, रक्तस्राव, और कॉफी के रंग की मितली आना शामिल हैं।"
+
+  utter_yellow_fever_treatment:
+  - text: "पीला बुखार का सबसे अच्छा उपचार प्रारंभिक निदान और उचित मेडिकल केयर है। तेज बुखार और पीलिया जैसे लक्षण दिखने पर तुरंत चिकित्सक की सलाह लेनी चाहिए।"
+
+  utter_about_filariasis:
+  - text: "फाइलेरिया, जिसे हाथी पांव भी कहा जाता है, एक संक्रामक रोग है जो अक्सर हाथ या पैर के बहुत ज्यादा सूजन से पहचाना जाता है।"
+
+  utter_filariasis_symptoms:
+  - text: "फाइलेरिया के लक्षणों में पैरों और हाथों में सूजन, कॅपकॅपी के साथ बुखार, गले में सूजन, और पुरुषों के अंडकोष में सूजन शामिल हैं।"
+
+  utter_filariasis_treatment:
+  - text: "फाइलेरिया का उपचार मच्छरों से बचाव और समय पर मेडिकल इलाज से संभव है। मच्छरदानी का उपयोग करें और शरीर को पूरी तरह से ढकने वाले कपड़े पहनें।"
+
+  utter_about_knee_pain:
+  - text: "घुटना हमारे शरीर का एक महत्वपूर्ण जोड़ होता है। इसमें सूजन, दर्द और स्थायित्व की कमी जैसे समस्याएँ आ सकती हैं।"
+
+  utter_knee_pain_symptoms:
+  - text: "घुटनों में दर्द, सूजन, चटखन, जकड़न, और दर्द के साथ टांगों का टेढ़ा होना घुटने के दर्द के मुख्य लक्षण हैं।"
+
+  utter_knee_pain_treatment:
+  - text: "घुटनों के दर्द से बचने के लिए वजन नियंत्रित रखें, स्वस्थ आहार लें, और नियमित व्यायाम करें। दर्द कम करने के लिए ठंडे सेक का उपयोग कर सकते हैं।"
+
+  utter_about_leprosy:
+  - text: "कुष्ठरोग माइकोबैक्टेरियम लेप्री और माइकोबैक्टेरियम लेप्रोमेटॉसिस जीवाणुओं के कारण होने वाली एक दीर्घकालिक बीमारी है, जो मुख्यतः त्वचा और नसों को प्रभावित करती है।"
+
+  utter_leprosy_symptoms:
+  - text: "कुष्ठरोग के लक्षणों में त्वचा पर रंगहीन दाग, स्पर्शहीनता, त्वचा पर सुन्नता, और हाथ-पैरों का सुन्न हो जाना शामिल हैं।"
+
+  utter_leprosy_treatment:
+  - text: "कुष्ठरोग का इलाज सरकारी स्वास्थ केंद्रों में नि:शुल्क उपलब"
+
+  utter_about_pancreatitis:
+  - text: "अग्न्याशयशोथ अग्न्याशय में सूजन होने की स्थिति है, जो आमतौर पर अग्न्याशय द्वारा छोटी आंत में पाचन एंजाइम छोड़े जाने से पहले सक्रिय हो जाने पर होती है।"
+
+  utter_pancreatitis_symptoms:
+  - text: "अग्नाशयशोथ में आमतौर पर बढ़ी हुई ह्रदय गति, पेट के ऊपरी हिस्से में तेज दर्द, बुखार, दस्त, मतली, और उल्टी शामिल हैं।"
+
+  utter_pancreatitis_treatment:
+  - text: "अग्नाशयशोथ का उपचार उसकी गंभीरता पर निर्भर करता है। आपको स्वच्छता में रहना चाहिए, गंदे पानी के संपर्क में नहीं आना चाहिए, और रोग के लक्षण दिखाई देने पर तुरंत डॉक्टर से संपर्क करना चाहिए।"
+
+  utter_about_migraine:
+  - text: "माइग्रेन सर में होने वाले सबसे तेज दर्दों में से एक है, जिससे सर और कान के पीछे के हिस्से में असहनीय दर्द होता है।"
+
+  utter_migraine_symptoms:
+  - text: "माइग्रेन के लक्षण में तीव्र सिरदर्द, फोटोफोबिया, फोनोफोबिया, नींद न आना, आंखों में दर्द, मितली और उल्टी शामिल हैं।"
+
+  utter_migraine_treatment:
+  - text: "माइग्रेन के इलाज में आइस पैक लगाना, मालिश करना, गर्म या ठंडे पानी से मालिश करना, और तनाव से बचना शामिल है। घरेलू नुस्खों में लैवेंडर ऑयल, पेपरमिंट तेल, और अदरक का उपयोग किया जाता है।"
+
+  utter_about_pneumonia:
+  - text: "निमोनिया एक प्रकार का संक्रमण है जो फेफड़ों को प्रभावित करता है। यह बैक्टीरिया, वायरस या फंगस से हो सकता है।"
+
+  utter_pneumonia_symptoms:
+  - text: "निमोनिया के लक्षण में सर्दी, हाई फीवर, कफ, कंपकपी, शरीर में दर्द, सिर दर्द, मांसपेशियों में दर्द शामिल हैं।"
+
+  utter_pneumonia_treatment:
+  - text: "निमोनिया के इलाज में आमतौर पर मौखिक एंटीबायोटिक दवाओं, आराम, तरल पेय पदार्थ, और घर पर देखभाल शामिल है। सीने में दर्द और बेचैनी से राहत पाने के लिए, लहसुन का रस और तुलसी का उपयोग किया जा सकता है।"
+
+  utter_about_anorexia:
+  - text: "एनोरेक्सिया एक भूख न लगने की स्थिति है जिसमें रोगी को खाने में रुचि नहीं होती और पेट भरा हुआ महसूस होता है।"
+
+  utter_anorexia_symptoms:
+  - text: "एनोरेक्सिया के लक्षण में भोजन में रुचि न होना, मानसिक अशांति, शारीरिक कमजोरी, और ज्यादा प्यास लगना शामिल हैं।"
+
+  utter_anorexia_treatment:
+  - text: "एनोरेक्सिया के इलाज में उचित आहार और पाचन तंत्र को सही करने वाले उपायों का समावेश होता है, जैसे कि लहसुन, अदरक और मेथी का सेवन।"
+
+  utter_about_pain:
+  - text: "दर्द या पीड़ा शरीर में अनुभव होने वाली एक असहज स्थिति है जो चोट लगने, जलने, या किसी अन्य पूरानी बीमारी के कारण हो सकती है।"
+
+  utter_pain_causes:
+  - text: "दर्द के कई कारण हो सकते हैं जैसे कि कैंसर, कान में संक्रमण, अचानक बीमारी, या मांसपेशी की चोट।"
+
+  utter_pain_treatment:
+  - text: "दर्द के इलाज में ठंडा या गर्म सेंक करना शामिल है। ठंडा सेंक नई चोटों के लिए और गर्म सेंक पुराने दर्द के लिए प्रभावी हो सकता है। गंभीर चोटों के मामले में गर्म सेंक से बचना चाहिए।"
+
+  utter_about_insomnia:
+  - text: "अनिद्रा या नींद न आने की समस्या एक आम शारीरिक और मानसिक समस्या है जिसमें व्यक्ति को सोने में कठिनाई होती है।"
+
+  utter_insomnia_causes:
+  - text: "अनिद्रा के प्रमुख कारण में तनाव, चिंता, और जीवनशैली की आदतें शामिल हैं। यह मानसिक और शारीरिक दोनों कारणों से हो सकता है।"
+
+  utter_insomnia_treatment:
+  - text: "अनिद्रा का इलाज शारीरिक परिश्रम, आरामदायक शयन कक्ष, धीमा संगीत, और सोने से पहले सकारात्मक बातें सोचना शामिल है। इन उपायों को अपनाकर बेहतर नींद प्राप्त की जा सकती है।"
+
+  utter_about_hernia:
+  - text: "हर्निया एक ऐसी स्थिति है जिसमें पेट की मांसपेशियां कमजोर हो जाती हैं और उसी कमजोर जगह से आंतें बाहर निकल आती हैं। यह पुरुषों और महिलाओं दोनों में हो सकती है।"
+
+  utter_hernia_symptoms:
+  - text: "हर्निया के लक्षणों में पेट में सूजन और उभार, पेट की चर्बी या आँतों का बाहर की ओर निकलना, और पेट में दर्द शामिल हैं।"
+
+  utter_hernia_causes:
+  - text: "हर्निया होने के कारणों में पैदाइशी तौर पर मांसपेशियों की कमजोरी, भारी वजन उठाना, पुरानी खाँसी, मोटापा, कब्ज और पेशाब में रुकावट शामिल हैं।"
+
+  utter_hernia_treatment:
+  - text: "हर्निया का इलाज मुख्यतः सर्जरी के माध्यम स"
+
+  utter_about_spondylosis:
+  - text: "स्पोंडिलोसिस आर्थराइटिस का ही एक रूप है, जो मुख्यतः मेरुदंड को प्रभावित करता है।"
+
+  utter_spondylosis_symptoms:
+  - text: "स्पोंडिलोसिस के लक्षणों में गर्दन, कंधे, और पीठ के ऊपरी हिस्से में दर्द और कड़ापन शामिल हैं। साथ ही, उंगलियाँ सुन्न हो सकती हैं और शारीरिक संतुलन गड़बड़ा सकता है।"
+
+  utter_spondylosis_causes:
+  - text: "स्पोंडिलोसिस के कारणों में आनुवंशिक कारण, उम्र का बढ़ना, लंबे समय तक ड्राइविंग करना"
+
+  utter_spondylosis_treatment:
+  - text: "यह एक प्रकार का दर्द और जकड़न होती है जो गर्दन से शुरू होकर पीठ के निचले हिस्से तक जारी रहती है। इसके परिणामस्वरूप रीढ़ की विकृति भी हो सकती है जिससे व्यक्ति की कमर झुकने लगती है या झुकी हुई मुद्रा में रहता है।"
+  
+  utter_about_liver_cancer:
+  - text: "लीवर कैंसर, जिसे हेपाटोसेलुलर कारसिनोमा भी कहा जाता है, तब होता है जब लीवर की कोशिकाएँ अनियंत्रित रूप से बढ़ने लगती हैं।"
+
+  utter_liver_cancer_symptoms:
+  - text: "लीवर कैंसर के लक्षणों में अचानक वजन में कमी, असामान्य थकान, पीलिया, पेट में सूजन और दर्द शामिल हैं।"
+
+  utter_liver_cancer_causes:
+  - text: "लीवर कैंसर होने के कारणों में ज्यादा शराब पीना, हेपेटाइटिस बी और सी का संक्रमण, और लीवर का सिरोसिस शामिल हैं।"
+
+  utter_liver_cancer_treatment:
+  - text: "लीवर कैंसर का इलाज अक्सर सर्जरी"
+
+  utter_about_back_pain:
+  - text: "कमर दर्द आमतौर पर रीढ़ की समस्याओं, गलत पोस्चर, या चोट के कारण होता है। इसे अक्सर स्लिप डिस्क भी कहा जाता है।"
+
+  utter_back_pain_symptoms:
+  - text: "कमर दर्द के लक्षणों में चलने-फिरने, झुकने, या सामान्य काम करने में दर्द होना शामिल है। यह दर्द पैरों में भी जा सकता है और पैर सुन्न हो सकते हैं।"
+
+  utter_back_pain_causes:
+  - text: "कमर दर्द के मुख्य कारणों में गलत पोस्चर, भारी वस्तु उठाना, और लंबे समय तक बैठे रहना शामिल हैं। उम्र बढ़ने के साथ हड्डियों की कमजोरी भी एक कारण हो सकती है।"
+
+  utter_back_pain_treatment:
+  - text: "कमर दर्द का इलाज में आराम कर"
+
+  utter_about_chest_pain:
+  - text: "सीने में दर्द कई कारणों से हो सकता है जैसे कि फेफड़े, मांसपेशियाँ, पसली, नसों की समस्या या हृदय संबंधित विकार। सीने में दर्द होने पर तुरंत चिकित्सकीय सहायता लेनी चाहिए।"
+
+  utter_chest_pain_symptoms:
+  - text: "सीने में दर्द स्वयं कई रोगों का लक्षण हो सकता है। यह दर्द कंधे, बाँह, पीठ, पेट के ऊपरी भाग में महसूस हो सकता है और धमनियों में थक्का जमने पर बढ़ जाता है।"
+
+  utter_chest_pain_causes:
+  - text: "सीने में दर्द के कारणों में एनजाइना, उच्च रक्तचाप, एसिडिट"
+
+  utter_chest_pain_treatment:
+  - text: "यदि तीन अथवा अधिक सप्ताह से खाँसी हो रही हो तो कफ़ की दो बार जाँच कराएं। ये जाँच सरकारी कफ़ सूक्ष्मदर्शी केन्द्रों पर नि:शुल्क की जाती है।"
+
+  utter_about_lung_cancer:
+  - text: "फेफड़ों का कैंसर उन कोशिकाओं के अनियंत्रित विकास के कारण होता है जो बिनाइन और मेलिगनेन्ट ट्यूमर के रूप में हो सकते हैं।"
+
+  utter_lung_cancer_symptoms:
+  - text: "फेफड़ों के कैंसर के लक्षणों में खांसी में खून आना, निरंतर खांसी, वजन में कमी, सांस में दिक्कत, और सिर दर्द या चेहरे में सूजन शामिल हैं।"
+
+  utter_lung_cancer_causes:
+  - text: "फेफड़ों के कैंसर के मुख्य कारणों में धूम्रपान, एस्बेस्टस का एक्सपोजर"
+
+  utter_lung_cancer_treatment:
+  - text: "सर्जरी, रेडियोफ्रीक्वेंसी अबलेशन, रेडिएशन थेरेपी, कीमोथेरेपी, टार्गेटेड ड्रग थेरेपी, इम्मुनोथेरपी, लक्षणों को कम करने के लिए उपचार"
+
+  utter_about_fatigue:
+  - text: "थकान एक सामान्य अवस्था है जो अधिक शारीरिक या मानसिक परिश्रम के बाद होती है। यह कमजोरी से अलग है और आराम करने पर दूर हो जाती है।"
+
+  utter_fatigue_symptoms:
+  - text: "थकान के लक्षण में कमजोरी महसूस होना, काम में मन न लगना, नकरात्मक सोच बढ़ना, और हर समय नींद आना शामिल हैं।"
+
+  utter_fatigue_causes:
+  - text: "थकान के कारण शारीरिक और मानसिक दोनों हो सकते हैं, जैसे एनीमिया, थाइराइड समस्या, शुगर का बढ़ा हुआ स्तर, अवसाद, और लगातार तनाव।"
+
+  utter_fatigue_treatment:
+  - text: "थकान दूर करने के उपायों में अच्छी नींद लेना, छोटी झपकियाँ लेना, हंसना"
+
+  utter_about_blood_clot:
+  - text: "रक्त का थक्का बनने और उसके घुलने की प्रक्रिया हमारे प्लाज्मा में मौजूद प्लेटलेट्स और प्रोटीन द्वारा नियंत्रित की जाती है। चोट लगने पर रक्त के थक्के का निर्माण होता है जो रक्त बहाव को रोकता है।"
+
+  utter_blood_clot_symptoms:
+  - text: "रक्त के थक्के होने पर घबराहट, पसीना और सिर चकराना महसूस हो सकता है।"
+
+  utter_blood_clot_causes:
+  - text: "रक्त का थक्का बन"
+
+  utter_about_muscle_pain:
+  - text: "मांसपेशियों में दर्द आज की व्यस्त और भागदौड़ भरी जिंदगी में एक आम समस्या है, जो अनियमित जीवनशैली और गलत खानपान के कारण हो सकता है।"
+
+  utter_muscle_pain_symptoms:
+  - text: "मांसपेशियों में दर्द के लक्षणों में शामिल हैं शारीरिक कमजोरी, नींद न आना, और मांसपेशियों में आयी अकड़न।"
+
+  utter_muscle_pain_causes:
+  - text: "मांसपेशियों में दर्द के कारणों में शारीरिक परिश्रम या कठोर श्रम के कारण तनाव, थकान, इन्फ्लूएंजा, लाइम डिसीज, मलेरिया, और इलेक्ट्रोलाइट का असंतुलन जैसे कारण शामिल हैं।"
+
+  utter_muscle_pain_treatment:
+  - text: "मांसपेशियों में दर्द होने पर सेंक और मालिश से आराम मिलता है। अच्छी डाइट, पर्याप्त नींद, और नियमित व्यायाम इस दर्द के उपचार में मददगार होते हैं।"
+
+  utter_about_prostate_cancer:
+  - text: "प्रोस्टेट कैंसर पुरुषों को होने वाला एक कैंसर है जो शुरुआती दौर में पता चलने पर आसानी से ठीक हो सकता है।"
+
+  utter_prostate_cancer_symptoms:
+  - text: "प्रोस्टेट कैंसर के लक्षणों में कूल्हे, जांघ और पीठ में दर्द, पेशाब में दर्द और जलन, बार-बार पेशाब जाना, और सेक्स के दौरान दर्द शामिल हैं।"
+
+  utter_prostate_cancer_causes:
+  - text: "प्रोस्टेट कैंसर के मुख्य कारणों में बढ़ती उम्र, आनुवंशिकता, खराब खानपान जैसे ज्यादा वसायुक्त डेयरी उत्पादों का सेवन, और धूम्रपान शामिल हैं।"
+
+  utter_prostate_cancer_treatment:
+  - text: "प्रोस्टेट कैंसर"
+
+  utter_about_hepatitis:
+  - text: "हेपेटाइटिस एक जानलेवा बीमारी है जो अक्सर सावधानी ना बरतने और साफ सफाई ना रखने के कारण फैलती है। जो व्यक्ति हेपेटाइटिस (Hepatitis) का शिकार होता है उसके लीवर में सूजन हो जाती है। एक शोध के अनुसार हर वर्ष लाखों की संख्या में लोग इस बीमारी के शिकार होते हैं। "
+
+  utter_hepatitis_symptoms:
+  - text: "हैपेटाइटिस में आम लक्षणों में शामिल हैं: अत्यधिक कमजोरी, पीलिया, पाचन समस्याएं, और चिड़चिड़ापन।"
+
+  utter_hepatitis_causes:
+  - text: "हैपेटाइटिस मुख्यत: विषाणुओं के कारण होता है, परन्तु इसके कारण में शामिल हैं शराब का सेवन, कुपोषण और आनुवांशिक कारक।"
+
+  utter_hepatitis_treatment:
+  - text: "हैपेटाइटिस का उपचार उसके कारण पर निर्भर करता है। सामान्य उपचार में शामिल हैं दवाईयाँ, आहार में सुधार और कभी-कभी सर्जरी।"
+
+  utter_symptoms_yellow_teeth:
+  - text: "पीले दांत मुख्य लक्षण हैं। यह सौंदर्य पर भी प्रभाव डाल सकते हैं।"
+
+  utter_causes_yellow_teeth:
+  - text: "पीले दांत विभिन्न कारणों से हो सकते हैं, जैसे तंबाकू का सेवन, उम्र बढ़ने से, और अत्यधिक चाय या कॉफी पीने से।"
+
+  utter_treatments_yellow_teeth:
+  - text: "पीले दांतों के उपचार में व्हाइट्निंग किट, डेंटल ब्लीचिंग और विशेष केमिकल उपचार शामिल हैं।"
+
+  utter_home_remedies_yellow_teeth:
+  - text: "घर पर दांतों को सफेद करने के लिए बेकिंग सोडा, संतरे का छिलका, और स्ट्रॉबेरी का उपयोग कर सकते हैं।"
+
+  utter_symptoms_tb:
+  - text: "टी.बी. के लक्षणों में लंबे समय तक खांसी, खून आना, वजन घटना, रात में पसीना आना, और भूख न लगना शामिल हैं।"
+
+  utter_causes_tb:
+  - text: "टी.बी. जीवाणु के संपर्क में आने से होता है, खासकर खांसी और छींक के जरिए फैलता है। अन्य कारणों में कच्चा दूध पीना और धूल भरे वातावरण में रहना शामिल हैं।"
+
+  utter_treatments_tb:
+  - text: "टी.बी. का उपचार दवाओं के नियमित सेवन से किया जाता है। खांसते या छींकते समय रूमाल का इस्तेमाल करें और सरकारी केन्द्रों पर नि:शुल्क जांच कर"
+
+  utter_goodbye:
+  - text: "अलविदा"
+
+  utter_iamabot:
+  - text: "मैं एक बॉट हूं, जो आपकी सहायता के लिए बनाया गया है."
+
+actions:
+  - utter
+  - utter_hello
+  - utter_about_asthma
+  - utter_asthma_symptoms
+  - utter_asthma_causes
+  - utter_asthma_treatment
+  - utter_about_diabetes
+  - utter_diabetes_symptoms
+  - utter_diabetes_treatment
+  - utter_about_viral_fever
+  - utter_viral_fever_symptoms
+  - utter_viral_fever_treatment
+  - utter_about_measles
+  - utter_measles_symptoms
+  - utter_measles_treatment
+  - utter_about_indigestion
+  - utter_indigestion_symptoms
+  - utter_indigestion_treatment
+  - utter_about_arthritis
+  - utter_arthritis_symptoms
+  - utter_arthritis_causes
+  - utter_arthritis_treatment
+  - utter_about_yellow_fever
+  - utter_yellow_fever_symptoms
+  - utter_yellow_fever_treatment
+  - utter_about_filariasis
+  - utter_filariasis_symptoms
+  - utter_filariasis_treatment
+  - utter_about_knee_pain
+  - utter_knee_pain_symptoms
+  - utter_knee_pain_treatment
+  - utter_about_leprosy
+  - utter_leprosy_symptoms
+  - utter_leprosy_treatment
+  - utter_about_pancreatitis
+  - utter_pancreatitis_symptoms
+  - utter_pancreatitis_treatment
+  - utter_about_migraine
+  - utter_migraine_symptoms
+  - utter_migraine_treatment
+  - utter_about_pneumonia
+  - utter_pneumonia_symptoms
+  - utter_pneumonia_treatment
+  - utter_about_anorexia
+  - utter_anorexia_symptoms
+  - utter_anorexia_treatment
+  - utter_about_pain
+  - utter_pain_causes
+  - utter_pain_treatment
+  - utter_about_insomnia
+  - utter_insomnia_causes
+  - utter_insomnia_treatment
+  - utter_about_hernia
+  - utter_hernia_symptoms
+  - utter_hernia_causes
+  - utter_hernia_treatment
+  - utter_about_spondylosis
+  - utter_spondylosis_symptoms
+  - utter_spondylosis_causes
+  - utter_spondylosis_treatment
+  - utter_about_liver_cancer
+  - utter_liver_cancer_symptoms
+  - utter_liver_cancer_causes
+  - utter_liver_cancer_treatment
+  - utter_about_back_pain
+  - utter_back_pain_symptoms
+  - utter_back_pain_causes
+  - utter_back_pain_treatment
+  - utter_about_chest_pain
+  - utter_chest_pain_symptoms
+  - utter_chest_pain_causes
+  - utter_chest_pain_treatment
+  - utter_about_lung_cancer
+  - utter_lung_cancer_symptoms
+  - utter_lung_cancer_causes
+  - utter_lung_cancer_treatment
+  - utter_about_fatigue
+  - utter_fatigue_symptoms
+  - utter_fatigue_causes
+  - utter_fatigue_treatment
+  - utter_about_blood_clot
+  - utter_blood_clot_symptoms
+  - utter_blood_clot_causes
+  - utter_about_muscle_pain
+  - utter_muscle_pain_symptoms
+  - utter_muscle_pain_causes
+  - utter_muscle_pain_treatment
+  - utter_about_prostate_cancer
+  - utter_prostate_cancer_symptoms
+  - utter_prostate_cancer_causes
+  - utter_prostate_cancer_treatment
+  - utter_about_hepatitis
+  - utter_hepatitis_symptoms
+  - utter_hepatitis_causes
+  - utter_hepatitis_treatment
+  - utter_symptoms_yellow_teeth
+  - utter_causes_yellow_teeth
+  - utter_treatments_yellow_teeth
+  - utter_home_remedies_yellow_teeth
+  - utter_symptoms_tb
+  - utter_causes_tb
+  - utter_treatments_tb
+  - utter_goodbye
+  - utter_iamabot
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
