@@ -1,0 +1,332 @@
+version: "3.1"
+
+stories:
+
+- story: user greet
+  steps:
+  - intent: greet
+  - action: utter_hello
+
+- story: user bye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: Asthma Inquiry Path
+  steps:
+  - intent: about_asthma
+  - action: utter_about_asthma
+  - action: utter
+  - intent: asthma_symptoms
+  - action: utter_asthma_symptoms
+  - intent: asthma_causes
+  - action: utter_asthma_causes
+  - intent: asthma_treatment
+  - action: utter_asthma_treatment
+
+- story: Diabetes Inquiry Path
+  steps:
+  - intent: about_diabetes
+  - action: utter_about_diabetes
+  - intent: diabetes_symptoms
+  - action: utter_diabetes_symptoms
+  - intent: diabetes_treatment
+  - action: utter_diabetes_treatment
+
+- story: Viral Fever Inquiry Path
+  steps:
+  - intent: about_viral_fever
+  - action: utter_about_viral_fever
+  - intent: viral_fever_symptoms
+  - action: utter_viral_fever_symptoms
+  - intent: viral_fever_treatment
+  - action: utter_viral_fever_treatment
+
+- story: Measles Inquiry Path
+  steps:
+  - intent: about_measles
+  - action: utter_about_measles
+  - intent: measles_symptoms
+  - action: utter_measles_symptoms
+  - intent: measles_treatment
+  - action: utter_measles_treatment
+
+- story: Indigestion Inquiry Path
+  steps:
+  - intent: about_indigestion
+  - action: utter_about_indigestion
+  - intent: indigestion_symptoms
+  - action: utter_indigestion_symptoms
+  - intent: indigestion_treatment
+  - action: utter_indigestion_treatment
+
+- story: Arthritis Inquiry Path
+  steps:
+  - intent: about_arthritis
+  - action: utter_about_arthritis
+  - intent: arthritis_symptoms
+  - action: utter_arthritis_symptoms
+  - intent: arthritis_causes
+  - action: utter_arthritis_causes
+  - intent: arthritis_treatment
+  - action: utter_arthritis_treatment
+
+- story: Yellow Fever Inquiry Path
+  steps:
+  - intent: about_yellow_fever
+  - action: utter_about_yellow_fever
+  - intent: yellow_fever_symptoms
+  - action: utter_yellow_fever_symptoms
+  - intent: yellow_fever_treatment
+  - action: utter_yellow_fever_treatment
+
+- story: Filariasis Inquiry Path
+  steps:
+  - intent: about_filariasis
+  - action: utter_about_filariasis
+  - intent: filariasis_symptoms
+  - action: utter_filariasis_symptoms
+  - intent: filariasis_treatment
+  - action: utter_filariasis_treatment
+
+- story: Knee Pain Inquiry Path
+  steps:
+  - intent: about_knee_pain
+  - action: utter_about_knee_pain
+  - intent: knee_pain_symptoms
+  - action: utter_knee_pain_symptoms
+  - intent: knee_pain_treatment
+  - action: utter_knee_pain_treatment
+
+- story: Leprosy Inquiry Path
+  steps:
+  - intent: about_leprosy
+  - action: utter_about_leprosy
+  - intent: leprosy_symptoms
+  - action: utter_leprosy_symptoms
+  - intent: leprosy_treatment
+  - action: utter_leprosy_treatment
+
+- story: Pancreatitis Inquiry Path
+  steps:
+  - intent: about_pancreatitis
+  - action: utter_about_pancreatitis
+  - intent: pancreatitis_symptoms
+  - action: utter_pancreatitis_symptoms
+  - intent: pancreatitis_treatment
+  - action: utter_pancreatitis_treatment
+
+- story: Migraine Inquiry Path
+  steps:
+  - intent: about_migraine
+  - action: utter_about_migraine
+  - intent: migraine_symptoms
+  - action: utter_migraine_symptoms
+  - intent: migraine_treatment
+  - action: utter_migraine_treatment
+
+- story: Pneumonia Inquiry Path
+  steps:
+  - intent: about_pneumonia
+  - action: utter_about_pneumonia
+  - intent: pneumonia_symptoms
+  - action: utter_pneumonia_symptoms
+  - intent: pneumonia_treatment
+  - action: utter_pneumonia_treatment
+
+- story: Anorexia Inquiry Path
+  steps:
+  - intent: about_anorexia
+  - action: utter_about_anorexia
+  - intent: anorexia_symptoms
+  - action: utter_anorexia_symptoms
+  - intent: anorexia_treatment
+  - action: utter_anorexia_treatment
+
+- story: Pain Inquiry Path
+  steps:
+  - intent: about_pain
+  - action: utter_about_pain
+  - intent: pain_causes
+  - action: utter_pain_causes
+  - intent: pain_treatment
+  - action: utter_pain_treatment
+
+- story: Insomnia Inquiry Path
+  steps:
+  - intent: about_insomnia
+  - action: utter_about_insomnia
+  - intent: insomnia_causes
+  - action: utter_insomnia_causes
+  - intent: insomnia_treatment
+  - action: utter_insomnia_treatment
+
+- story: Hernia Inquiry Path
+  steps:
+  - intent: about_hernia
+  - action: utter_about_hernia
+  - intent: hernia_symptoms
+  - action: utter_hernia_symptoms
+  - intent: hernia_causes
+  - action: utter_hernia_causes
+  - intent: hernia_treatment
+  - action: utter_hernia_treatment
+
+- story: Spondylosis Inquiry Path
+  steps:
+  - intent: about_spondylosis
+  - action: utter_about_spondylosis
+  - intent: spondylosis_symptoms
+  - action: utter_spondylosis_symptoms
+  - intent: spondylosis_causes
+  - action: utter_spondylosis_causes
+  - intent: spondylosis_treatment
+  - action: utter_spondylosis_treatment
+
+
+- story: Liver Cancer Inquiry Path
+  steps:
+  - intent: about_liver_cancer
+  - action: utter_about_liver_cancer
+  - intent: liver_cancer_symptoms
+  - action: utter_liver_cancer_symptoms
+  - intent: liver_cancer_causes
+  - action: utter_liver_cancer_causes
+  - intent: liver_cancer_treatment
+  - action: utter_liver_cancer_treatment
+
+- story: Back Pain Inquiry Path
+  steps:
+  - intent: about_back_pain
+  - action: utter_about_back_pain
+  - intent: back_pain_symptoms
+  - action: utter_back_pain_symptoms
+  - intent: back_pain_causes
+  - action: utter_back_pain_causes
+  - intent: back_pain_treatment
+  - action: utter_back_pain_treatment
+
+- story: Chest Pain Inquiry Path
+  steps:
+  - intent: about_chest_pain
+  - action: utter_about_chest_pain
+  - intent: chest_pain_symptoms
+  - action: utter_chest_pain_symptoms
+  - intent: chest_pain_causes
+  - action: utter_chest_pain_causes
+  - intent: chest_pain_treatment
+  - action: utter_chest_pain_treatment
+
+- story: Lung Cancer Inquiry Path
+  steps:
+  - intent: about_lung_cancer
+  - action: utter_about_lung_cancer
+  - intent: lung_cancer_symptoms
+  - action: utter_lung_cancer_symptoms
+  - intent: lung_cancer_causes
+  - action: utter_lung_cancer_causes
+  - intent: lung_cancer_treatment
+  - action: utter_lung_cancer_treatment
+
+- story: Fatigue Inquiry Path
+  steps:
+  - intent: about_fatigue
+  - action: utter_about_fatigue
+  - intent: fatigue_symptoms
+  - action: utter_fatigue_symptoms
+  - intent: fatigue_causes
+  - action: utter_fatigue_causes
+  - intent: fatigue_treatment
+  - action: utter_fatigue_treatment
+
+- story: Blood Clot Inquiry Path
+  steps:
+  - intent: about_blood_clot
+  - action: utter_about_blood_clot
+  - intent: blood_clot_symptoms
+  - action: utter_blood_clot_symptoms
+  - intent: blood_clot_causes
+  - action: utter_blood_clot_causes
+
+- story: Muscle Pain Inquiry Path
+  steps:
+  - intent: about_muscle_pain
+  - action: utter_about_muscle_pain
+  - intent: muscle_pain_symptoms
+  - action: utter_muscle_pain_symptoms
+  - intent: muscle_pain_causes
+  - action: utter_muscle_pain_causes
+  - intent: muscle_pain_treatment
+  - action: utter_muscle_pain_treatment
+
+- story: Prostate cancer inquiry path
+  steps:
+  - intent: inquire_prostate_cancer
+  - action: utter_about_prostate_cancer
+  - intent: inquire_prostate_cancer_symptoms
+  - action: utter_prostate_cancer_symptoms
+  - intent: inquire_prostate_cancer_causes
+  - action: utter_prostate_cancer_causes
+  - intent: inquire_prostate_cancer_treatment
+  - action: utter_prostate_cancer_treatment
+
+- story: Prostate cancer symptoms path
+  steps:
+  - intent: inquire_prostate_cancer_symptoms
+  - action: utter_prostate_cancer_symptoms
+
+- story: Prostate cancer causes path
+  steps:
+  - intent: inquire_prostate_cancer_causes
+  - action: utter_prostate_cancer_causes
+
+- story: Prostate cancer treatment path
+  steps:
+  - intent: inquire_prostate_cancer_treatment
+  - action: utter_prostate_cancer_treatment
+
+- story: Hepatitis inquiry path
+  steps:
+  - intent: inquire_hepatitis
+  - action: utter_about_hepatitis
+  - intent: inquire_hepatitis_symptoms
+  - action: utter_hepatitis_symptoms
+  - intent: inquire_hepatitis_causes
+  - action: utter_hepatitis_causes
+  - intent: inquire_hepatitis_treatment
+  - action: utter_hepatitis_treatment
+
+- story: Hepatitis symptoms path
+  steps:
+  - intent: inquire_hepatitis_symptoms
+  - action: utter_hepatitis_symptoms
+
+- story: Hepatitis causes path
+  steps:
+  - intent: inquire_hepatitis_causes
+  - action: utter_hepatitis_causes
+
+- story: Hepatitis treatment path
+  steps:
+  - intent: inquire_hepatitis_treatment
+  - action: utter_hepatitis_treatment
+
+- story: Yellow Teeth Inquiry Path
+  steps:
+  - intent: inquire_symptoms_yellow_teeth
+  - action: utter_symptoms_yellow_teeth
+  - intent: inquire_causes_yellow_teeth
+  - action: utter_causes_yellow_teeth
+  - intent: inquire_treatments_yellow_teeth
+  - action: utter_treatments_yellow_teeth
+  - intent: inquire_home_remedies_yellow_teeth
+  - action: utter_home_remedies_yellow_teeth
+
+- story: Tuberculosis Inquiry Path
+  steps:
+  - intent: inquire_symptoms_tb
+  - action: utter_symptoms_tb
+  - intent: inquire_causes_tb
+  - action: utter_causes_tb
+  - intent: inquire_treatments_tb
+  - action: utter_treatments_tb
